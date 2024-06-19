@@ -7,6 +7,9 @@ const packs = require('../');
 
 // LH needs the pack id to match the filepath (for now, at least)
 // https://github.com/GoogleChrome/lighthouse/blob/2cbbd289be33a586462ed248179df7d7b692ca53/lighthouse-core/lib/stack-packs.js#L84-L86
+
+//some sample line of code
+
 test('pack Ids match paths', () => {
   for (const pack of packs) {
     const requiredPack = require(`../packs/${pack.id}`);
